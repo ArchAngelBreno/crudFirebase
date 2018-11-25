@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Adicionar Anotação</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label>Title</ion-label>
+    <ion-input [(ngModel)]="note.title" placeholder="Prova Desenvolvimento Movel"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Content</ion-label>
+    <ion-textarea [(ngModel)]="note.content" placeholder="Ionic3, Angular 4+"></ion-textarea>
+  </ion-item>
+<br>
+  <button ion-button block clear (click)="addNote(note)">Adicionar</button>
+</ion-content>
